@@ -1,0 +1,103 @@
+* {
+    border: none;
+    border-radius: 11px;
+    /* `ttf-font-awesome` is required to be installed for icons */
+    font-family: 'IBM Plex Sans', 'Symbols Nerd Font',  sans-serif;
+    font-weight: bold;
+
+    /* adjust font-size value to your liking: */
+    font-size: 13px;
+
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    color: #ffffff;
+    /* transition-property: background-color; */
+    /* transition-duration: .5s; */
+    /* border-radius: 0; */
+}
+
+#clock,
+#workspaces,
+#custom-menu,
+#hardware,
+#monitor,
+#window
+{
+    border: 0px solid white;
+    padding: 0 13px;
+    border-radius: 11px;
+    background-color: #1e1e1e;
+    color: #8f9ede;
+}
+
+#custom-menu {
+    padding: 10 15px;
+    margin-right: 10px;
+    background-color: #eeceab;
+    color: #1e1e1e;
+}
+
+#clock {
+    margin-left: 10px;
+    background-color: #bf616a;
+    color: #1e1e1e;
+}
+
+#pulseaudio {
+    padding: 0 10px;
+    margin: 5 10px;
+    background-color: #b48ead;
+    color: #1e1e1e;
+    border-radius: 7px;
+}
+
+#battery {
+    margin-right: 10px;
+    color: #b48ead;
+}
+
+#hardware {
+    border: 2px solid #b48ead;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+#cpu {
+    padding: 0 10px;
+    margin: 5 10px;
+    background-color: #c18a90;
+    color: #1e1e1e;
+    border-radius: 7px;
+}
+
+#memory {
+    margin-right: 10px;
+    color: #c18a90;
+}
+
+#monitor {
+    border: 2px solid #c18a90;
+    padding: 0px;
+}
+
+#workspaces {
+    border: 2px solid #eeceab;
+    padding: 0 5px;
+}
+
+#workspaces button {
+    color: #776755;
+    padding: 5px; 
+}
+
+#workspaces button.active {
+    background-color: #eeceab;
+    color: #1e1e1e;
+    padding: 0 10px;
+    margin: 5px;
+    border-radius: 7px;
+}

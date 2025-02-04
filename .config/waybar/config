@@ -1,0 +1,113 @@
+{
+    "layer": "top",
+    "height": 40,
+    "margin-top": 10,
+    "margin-left": 10,
+    "margin-right": 10,
+    "modules-left": ["custom/menu", "hyprland/workspaces"],
+    "modules-center": [],
+    "modules-right": ["group/monitor", "group/hardware", "clock"],
+    "group/monitor": {
+        "orientation": "horizontal",
+	"modules": ["cpu", "memory"]
+    },
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": ["pulseaudio", "battery"]
+    },
+    "custom/menu": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "rofi -show drun"
+    },
+    "clock": {
+        "format": "   {:%I:%M %p}"
+      },
+
+    "cpu": {
+        "format": "   {usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "   {percentage}%"
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{icon}   {temperatureC}°C",
+        "format-icons": ["", "", ""]
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% ",
+        "format-icons": ["", ""]
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}   {capacity}%",
+        "format-charging": "󰂄  {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "",
+        //"format-wifi": "   {essid}",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "󰖪"
+        //"format-disconnected": "  Disconnected"
+    },
+    "pulseaudio": {
+        "format": "{icon}   {volume}%",
+        "format-bluetooth": "󰂱  {volume}%",
+        "format-muted": "󰖁  Muted",
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"],
+        "format-icons": {
+          "headphone": "  ",
+          "hands-free": " ",
+          "headset": "󰋎 ",
+          "phone": " ",
+          "portable": " ",
+          "car": "",
+          "default": ["", ""]
+        }
+      },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+          "urgent": "󰀨",
+          "active": "本",
+          "default": ""
+        },
+        "persistent-workspaces": {
+	  "1": [],
+	  "2": [],
+	  "3": []
+	}
+    },
+    "hyprland/window": {
+        "format": "{class}",
+        "rewrite": {
+            "codium-url-handler": "VSCodium",
+            "firefox-nightly": "Firefox",
+            "kitty": "Terminal",
+            "": "Workspace"
+        },
+        "separate-outputs": true
+    },
+    "hyprland/language": {
+        "format": "Lang: {}",
+        "format-en": "AMERICA, HELL YEAH!",
+        "format-tr": "As bayrakları",
+        "keyboard-name": "at-translated-set-2-keyboard"
+    }
+}

@@ -1,0 +1,135 @@
+* {
+    border: none;
+    border-radius: 11px;
+    /* `ttf-font-awesome` is required to be installed for icons */
+    font-family: 'IBM Plex Sans', 'Symbols Nerd Font',  sans-serif;
+    font-weight: bold;
+
+    /* adjust font-size value to your liking: */
+    font-size: 13px;
+
+    min-height: 0;
+}
+
+.modules-left {
+    margin-left: 20px;
+}
+
+.modules-right {
+    margin-right: 20px;    
+}
+
+window#waybar {
+    background-color: #1e1e1e;
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    color: #ffffff;
+    /* transition-property: background-color; */
+    /* transition-duration: .5s; */
+    /* border-radius: 0; */
+}
+
+#workspaces button.active {
+    color: #8f9ede;
+}
+
+#workspaces button {
+    color: #322d58;
+}
+
+#workspaces
+{
+    border: 0px solid white;
+    padding: 0 5px;
+    margin: 3px 5px;
+    border-radius: 11px;
+}
+
+#clock
+{
+    border: 0px solid white;
+    padding: 0 0px;
+    margin: 3px 10px; 
+}
+
+#window,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd 
+{
+    border: 0px solid white;
+    padding: 0 5px;
+    margin: 3px 5px; 
+    border-radius: 11px;
+}
+
+#workspaces
+{
+    background-color: #212121;
+    border-color: white;
+    color: white;
+}
+
+#window
+{
+    background-color: transparent;
+    border-color: black;
+    color: #97bc66;
+}
+
+#cpu
+{ 
+    background-color: transparent;
+    /* border-color: white; */
+    color: #aa3642;
+}
+
+#memory
+{
+    background-color: transparent;
+    /* border-color: white; */
+    color: #b4a7d6;
+}
+
+#clock
+{
+    /* border-color: white; */
+    background-color: transparent;
+    color: white;
+}
+
+#network
+{ 
+    background-color: transparent;
+    /* border-color: white; */
+    color: white;
+}
+
+#pulseaudio
+{
+    background-color: transparent;
+    /* border-color: white; */
+    color: #f6b26b;
+}
+
+#battery
+{
+    background-color: transparent;
+    /* border-color: white; */
+    color: #7fbfe4;
+}
+
+#temperature
+{ 
+    background-color: transparent;
+    /* border-color: white; */
+    color: #97bc66;
+}
